@@ -65,7 +65,14 @@ html, body {
 .carousel .slick-dots li:hover button:before,
 .carousel .slick-dots li.slick-active button:before {
     color: rgba(255,255,255,1);
-}   
+} 
+
+@media only screen and (max-width: 500px) {
+  .slider {
+    position: absolute;
+    z-index: 10;
+  }
+}  
 
 
 /*start navigation*/
