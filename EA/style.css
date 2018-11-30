@@ -7,17 +7,18 @@ html, body {
   height: 100%;
 } 
 
+
+/*start slider*/
 .carousel-content-title {
   color: white;
   font-size: 4em;
   text-transform: uppercase;
-  text-shadow: 1px 1px 20px black;
+  text-shadow: 1px 1px 50px black;
 }
 
 .carousel-content {
   width: inherit;
   height: 100vh;
-  /*background: red;*/
   position: absolute;
   z-index: 2;
   display: flex;
@@ -72,11 +73,26 @@ html, body {
     position: absolute;
     z-index: 10;
   }
+
+  .slick-slide img {
+    height: 100vh;
+  }
+
+  .carousel img {
+    width: unset;
+    max-width: unset;
+  }
+
+  .carousel-content-title {
+    width: 80%;
+    text-align: center;
+  }
 }  
+/*end slider*/
+
+
 
 /*start navigation*/
-
-
 nav {
   position: absolute;
   z-index: 2;
@@ -109,7 +125,11 @@ nav ul li a:hover {
   transition: .2s linear;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 500px) {
+  nav {
+    z-index: 20;
+  }
+
   .nav-container {
     position: fixed;
     top: 0;
@@ -215,6 +235,86 @@ nav ul li a:hover {
 .hidden {
   display: none;
 }
-
-
 /*end navigation*/
+
+
+
+/*start image grid*/
+html, body { padding: 0; margin: 0; }
+.image-grid div {
+  width: 25%;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image01 { background-image: url('https://d3qvqlc701gzhm.cloudfront.net/thumbs/b24989b778fca2236c1a14d67ecde07874b201b1a9f11c62b8ddc1e1760280d9-500.jpg'); }
+.image02 { background-image: url('https://whenhub.blob.core.windows.net/media/58f08a993e70d41de4df092b/273_med_20120703194406.jpeg'); }
+.image03 { background-image: url('http://www.highlight.co.il/web/wp-content/uploads/2016/08/DSC_2408-500x500.jpg'); }
+.image04 { background-image: url('https://d3qvqlc701gzhm.cloudfront.net/thumbs/37224df60bda6dec1b15dc1d6a2f2d3664f064e593c663511c14f252356c8f0c-500.jpg'); }
+.image05 { background-image: url('http://d1marr3m5x4iac.cloudfront.net/images/edpborder500/fallback/event/categories/music/music_default_2.jpg'); }
+.image06 { background-image: url('https://i1.wp.com/studybreaks.com/wp-content/uploads/2018/10/rockconcert1.jpg?resize=500%2C500&ssl=1'); }
+.image07 { background-image: url('https://static1.squarespace.com/static/5901190715d5db484423c671/5910a78fa5790af453d2fe10/5910a8fc3e00bed4274f0da4/1499103432316/concert-theater-production.jpg'); }
+.image08 { background-image: url('https://www.levittpavilionpasadena.org/wp-content/uploads/2015/04/2015-Season-500x500.jpg'); }
+
+
+.image-text {
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 6em .5em;
+}
+
+@media screen and (max-width: 500px) {
+  .image-grid {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+  .image-grid div { 
+    width: 100%; 
+  }
+  
+  .image-text {
+    text-align: center;
+  }
+}
+
+/*end image grid*/
+
+.fullscreen-bg {
+  background-image: url('https://static1.squarespace.com/static/5430f838e4b0887f19e3ca20/585a08c02e69cf2bd54c53a0/585a0995be659475691a4d88/1482295706628/BY_ILLGANDER_0479.jpg?format=2500w');
+  height: 100vh;
+  background-size: 100%;
+}
+
+.first-bg-content-container {
+  width: inherit;
+  height: inherit;
+  background: rgba(0,0,0,.2);
+  color: white;
+  position: relative;
+}
+
+.first-bg-wrapper {
+  width: 70%;
+  position: relative;
+  left: 10%;
+  top: 30%;
+}
+
+.first-bg-title {
+  font-size: 3em;
+  font-family: cursive;
+}
+
+.first-bg-subtext {
+  font-size: 1.1em;
+  font-family: 'Helvetica';
+  font-weight: 700;
+}
