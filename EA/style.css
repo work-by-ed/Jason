@@ -258,14 +258,14 @@ html, body { padding: 0; margin: 0; }
   flex-wrap: wrap;
 }
 
-.image01 { background-image: url('https://d3qvqlc701gzhm.cloudfront.net/thumbs/b24989b778fca2236c1a14d67ecde07874b201b1a9f11c62b8ddc1e1760280d9-500.jpg'); }
-.image02 { background-image: url('https://whenhub.blob.core.windows.net/media/58f08a993e70d41de4df092b/273_med_20120703194406.jpeg'); }
-.image03 { background-image: url('http://www.highlight.co.il/web/wp-content/uploads/2016/08/DSC_2408-500x500.jpg'); }
-.image04 { background-image: url('https://d3qvqlc701gzhm.cloudfront.net/thumbs/37224df60bda6dec1b15dc1d6a2f2d3664f064e593c663511c14f252356c8f0c-500.jpg'); }
-.image05 { background-image: url('http://d1marr3m5x4iac.cloudfront.net/images/edpborder500/fallback/event/categories/music/music_default_2.jpg'); }
-.image06 { background-image: url('https://i1.wp.com/studybreaks.com/wp-content/uploads/2018/10/rockconcert1.jpg?resize=500%2C500&ssl=1'); }
-.image07 { background-image: url('https://static1.squarespace.com/static/5901190715d5db484423c671/5910a78fa5790af453d2fe10/5910a8fc3e00bed4274f0da4/1499103432316/concert-theater-production.jpg'); }
-.image08 { background-image: url('https://www.levittpavilionpasadena.org/wp-content/uploads/2015/04/2015-Season-500x500.jpg'); }
+.image01 { background-image: url('https://o.aolcdn.com/images/dims3/GLOB/crop/3000x1502+0+0/resize/630x315!/format/jpg/quality/85/http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F27fd0619b52d5cd7e59b00418871a1a%2F206393310%2Flil-uzi-vert-performs-during-in-bloom-festival-at-eleanor-tinsley-on-picture-id937702988'); }
+.image02 { background-image: url('http://newsplanet.win/wp-content/uploads/2018/08/travis-scott-announces-astroworld-festival-2018.png'); }
+.image03 { background-image: url('https://media.npr.org/assets/img/2017/01/10/gettyimages-622931522_wide-095c55373ac37472cf82592a67232e81fe8cae28.jpg?s=1400'); }
+.image04 { background-image: url('https://img.maximummedia.ie/joe_co_uk/eyJkYXRhIjoie1widXJsXCI6XCJodHRwOlxcXC9cXFwvbWVkaWEtam9lY291ay5tYXhpbXVtbWVkaWEuaWUuczMuYW1hem9uYXdzLmNvbVxcXC93cC1jb250ZW50XFxcL3VwbG9hZHNcXFwvMjAxOFxcXC8wNFxcXC8yNTAwMjM0OVxcXC9HZXR0eUltYWdlcy05MTEzOTI0MjQtMTAyNHg3ODkuanBnXCIsXCJ3aWR0aFwiOjc2NyxcImhlaWdodFwiOjQzMSxcImRlZmF1bHRcIjpcImh0dHBzOlxcXC9cXFwvd3d3LmpvZS5jby51a1xcXC9hc3NldHNcXFwvaW1hZ2VzXFxcL2pvZWNvdWtcXFwvbm8taW1hZ2UucG5nP3Y9NVwifSIsImhhc2giOiIyZDRjY2NhNGM0NTE2MTU4OTQ3OTE2ZjFmMzU5OTQ1ZjBmN2M1MzI4In0=/gettyimages-911392424-1024x789.jpg'); }
+.image05 { background-image: url('https://cdn.cnn.com/cnnnext/dam/assets/150729155417-tyler-the-creator-coachella-exlarge-169.jpg'); }
+.image06 { background-image: url('https://assets.capitalxtra.com/2015/39/drake-1443430182-article-0.jpg'); }
+.image07 { background-image: url('https://consequenceofsound.files.wordpress.com/2018/01/asap-rocky-above-new-song.jpg?quality=80'); }
+.image08 { background-image: url('https://static.spin.com/files/141202-TK-640x426.jpg'); }
 
 
 .image-text {
