@@ -273,6 +273,8 @@ html, body { padding: 0; margin: 0; }
   font-size: 1.3em;
   font-weight: bold;
   padding: 6em .5em;
+  text-align: center;
+  text-shadow: 1px 1px 20px black;
 }
 
 @media screen and (max-width: 500px) {
@@ -284,9 +286,6 @@ html, body { padding: 0; margin: 0; }
     width: 100%; 
   }
   
-  .image-text {
-    text-align: center;
-  }
 }
 
 /*end image grid*/
