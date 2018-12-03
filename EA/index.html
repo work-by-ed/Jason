@@ -13,6 +13,9 @@
 </head>
 
 <body>
+<div class='thing'></div>
+<div class="thing-bg glitch">COMING SOON...</div>
+
   <nav>
   <input type="checkbox" id="nav" class="hidden"/>
   <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
@@ -84,9 +87,10 @@
 
 
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+  <script src='https://camwiegert.github.io/baffle/dist/baffle.min.js'></script>
+
 <script>
 $(document).ready(function(){
     $('.carousel').slick({
@@ -100,6 +104,44 @@ $(document).ready(function(){
         dots: false
     });
 });
+
+
+
+
+
+
+var b = baffle(".thing-bg", {
+  characters: [
+    "█",
+    "▓",
+    "▒",
+    "░",
+    "█",
+    "▓",
+    "▒",
+    "░",
+    "█",
+    "▓",
+    "▒",
+    "░",
+    "<",
+    ">",
+    "/"
+  ],
+  speed: 500,
+  exclude: " "
+});
+b.start();
+setTimeout(function() {
+  b.set({ speed: 250 });
+  setTimeout(function() {
+    b.set({ speed: 150 });
+    setTimeout(function() {
+      b.set({ speed: 50 });
+      b.reveal(5000, 1000);
+    }, 2000);
+  }, 2000);
+}, 2000);
 </script>
   
 </body>
