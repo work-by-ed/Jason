@@ -384,8 +384,13 @@ html, body { padding: 0; margin: 0; }
 
 
 
+.wrapper {
+  filter: blur(3px);
+}
+
+
 .thing {
-    opacity: .7;
+    opacity: .6;
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/429997/giphy.gif);
     position: fixed;
     width: 100vw;
@@ -394,7 +399,7 @@ html, body { padding: 0; margin: 0; }
 }
 
 .thing-bg {
-    font-size: 4em !important;
+    font-size: 4em;
     color: white;
     /* float: left; */
     font-weight: bold;
@@ -410,9 +415,9 @@ html, body { padding: 0; margin: 0; }
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed !important;
+    text-shadow: 1px 1px 20px white;
 }
-
-
 
 
 .glitch {
@@ -433,6 +438,7 @@ html, body { padding: 0; margin: 0; }
   /* background: black; */
   overflow: hidden;
   top: 0;
+  font-size: .5em !important;
 }
 .glitch::before {
   left: 3px;
@@ -584,4 +590,26 @@ html, body { padding: 0; margin: 0; }
   100% {
     clip: rect(78px, 350px, 79px, 30px);
   }
+}
+
+
+@media only screen and (max-width:500px) {
+  
+  .glitch {
+    font-size: 80px;
+    text-align: center;
+  }
+  
+  .thing-bg {
+    text-align: center;
+  }
+  
+  .wrapper {
+    filter: blur(2px);
+  }
+
+  .thing {
+    opacity: .7;
+  }
+
 }

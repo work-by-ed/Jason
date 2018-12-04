@@ -13,9 +13,12 @@
 </head>
 
 <body>
-<div class='thing'></div>
-<div class="thing-bg glitch">COMING SOON...</div>
 
+  <div class='thing'></div>
+  <div class="thing-black-bg"></div>
+  <div class="thing-bg glitch">COMING SOON...</div>
+
+<div class="wrapper">
   <nav>
   <input type="checkbox" id="nav" class="hidden"/>
   <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
@@ -84,7 +87,7 @@
   <div class="footer-wrapper">
     <div class="footer-text">&copy; ED WAS HERE All rights reserved.</div>
   </div>
-
+</div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -110,38 +113,38 @@ $(document).ready(function(){
 
 
 
-// var b = baffle(".thing-bg", {
-//   characters: [
-//     "█",
-//     "▓",
-//     "▒",
-//     "░",
-//     "█",
-//     "▓",
-//     "▒",
-//     "░",
-//     "█",
-//     "▓",
-//     "▒",
-//     "░",
-//     "<",
-//     ">",
-//     "/"
-//   ],
-//   speed: 500,
-//   exclude: " "
-// });
-// b.start();
-// setTimeout(function() {
-//   b.set({ speed: 250 });
-//   setTimeout(function() {
-//     b.set({ speed: 150 });
-//     setTimeout(function() {
-//       b.set({ speed: 50 });
-//       b.reveal(5000, 1000);
-//     }, 2000);
-//   }, 2000);
-// }, 2000);
+var b = baffle(".thing-bg", {
+  characters: [
+    "█",
+    "▓",
+    "▒",
+    "░",
+    "█",
+    "▓",
+    "▒",
+    "░",
+    "█",
+    "▓",
+    "▒",
+    "░",
+    "<",
+    ">",
+    "/"
+  ],
+  speed: 500,
+  exclude: " "
+});
+b.start();
+setTimeout(function() {
+  b.set({ speed: 250 });
+  setTimeout(function() {
+    b.set({ speed: 150 });
+    setTimeout(function() {
+      b.set({ speed: 50 });
+      b.reveal(5000, 1000);
+    }, 2000);
+  }, 2000);
+}, 2000);
 </script>
   
 </body>
