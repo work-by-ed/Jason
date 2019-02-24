@@ -15,6 +15,7 @@ html, body {
   text-transform: uppercase;
   text-shadow: 1px 1px 50px black;
   font-family: 'Archivo Black', sans-serif;
+  font-weight: 700;
 }
 
 .carousel-content {
@@ -106,10 +107,26 @@ html, body {
 
 /*start navigation*/
 nav {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  padding: 1em 5em;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    width: 100%;
+    padding: 2em;
+    background: rgba(0,0,0,.5);
+}
+
+.site-logo {
+    width: auto;
+    height: auto;
+    max-width: 20%;
+    display: inline-block;
+    padding: 0 5%;
+    position: absolute;
+    top: 10%;
+}
+
+.site-logo img {
+    max-width: 70%;
 }
 
 nav ul {
@@ -131,16 +148,17 @@ nav ul li a {
   text-decoration: none;
   letter-spacing: 0.04em;
   transition: .2s linear;
-  font-family: 'Sintony', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
 }
 nav ul li a:hover {
-  color: black;
-  transition: .2s linear;
+  color: red;
+  transition: .2s;
 }
 
 @media screen and (max-width: 500px) {
   nav {
     z-index: 99999999999999999999999999999999999999999999999999999999999999;
+    background: transparent;
   }
 
   .nav-container {
